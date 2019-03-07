@@ -1,5 +1,5 @@
 export const calculateChange = (e, direction, hsl, container) => {
-  e.preventDefault()
+  // e.preventDefault()
   const containerWidth = container.clientWidth
   const containerHeight = container.clientHeight
   const x = typeof e.pageX === 'number' ? e.pageX : e.touches[0].pageX
@@ -15,7 +15,7 @@ export const calculateChange = (e, direction, hsl, container) => {
       h = 0
     } else {
       const percent = -((top * 100) / containerHeight) + 100
-      h = ((360 * percent) / 100)
+      h = (360 * percent) / 100
     }
 
     if (hsl.h !== h) {
@@ -35,7 +35,7 @@ export const calculateChange = (e, direction, hsl, container) => {
       h = 359
     } else {
       const percent = (left * 100) / containerWidth
-      h = ((360 * percent) / 100)
+      h = (360 * percent) / 100
     }
 
     if (hsl.h !== h) {
