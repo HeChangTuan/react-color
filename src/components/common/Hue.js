@@ -8,6 +8,8 @@ export class Hue extends (PureComponent || Component) {
   }
 
   handleChange = (e) => {
+    console.log(e)
+    console.log(this.props.direction, this.props.hsl, this.container)
     const change = hue.calculateChange(
       e,
       this.props.direction,
@@ -29,10 +31,10 @@ export class Hue extends (PureComponent || Component) {
   //   this.unbindEventListeners()
   // }
 
-  unbindEventListeners() {
-    window.removeEventListener('mousemove', this.handleChange)
-    window.removeEventListener('mouseup', this.handleMouseUp)
-  }
+  // unbindEventListeners() {
+  //   window.removeEventListener('mousemove', this.handleChange)
+  //   window.removeEventListener('mouseup', this.handleMouseUp)
+  // }
 
   render() {
     const { direction = 'horizontal' } = this.props
