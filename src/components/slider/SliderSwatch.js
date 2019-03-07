@@ -5,7 +5,7 @@ export const SliderSwatch = ({ hsl, offset, onClick = () => {}, active, first, l
   const styles = reactCSS({
     'default': {
       swatch: {
-        height: '12px',
+        height: '20px',
         background: `hsl(${ hsl.h }, 50%, ${ (offset * 100) }%)`,
         cursor: 'pointer',
       },
@@ -22,7 +22,7 @@ export const SliderSwatch = ({ hsl, offset, onClick = () => {}, active, first, l
     },
     'active': {
       swatch: {
-        transform: 'scaleY(1.8)',
+        transform: 'scaleY(1.4)',
         borderRadius: '3.6px/2px',
       },
     },
