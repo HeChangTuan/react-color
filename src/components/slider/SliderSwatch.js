@@ -21,6 +21,7 @@ export const SliderSwatch = ({
       first: {
         swatch: {
           borderRadius: '2px 0 0 2px',
+          border: '1px solid #ccc',
         },
       },
       last: {
