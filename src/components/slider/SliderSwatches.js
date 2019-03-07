@@ -28,11 +28,8 @@ export const SliderSwatches = ({ onClick, hsl }) => {
       <div style={ styles.swatch }>
         <SliderSwatch
           hsl={ hsl }
-          offset="1"
-          active={
-            Math.round(hsl.l * 100) / 100 === 1.0 &&
-            Math.round(hsl.s * 100) / 100 === 0.5
-          }
+          offset="1.00"
+          active={ hsl.l === 0 }
           onClick={ onClick }
           first
         />
@@ -46,7 +43,6 @@ export const SliderSwatches = ({ onClick, hsl }) => {
             Math.round(hsl.s * 100) / 100 === 0.5
           }
           onClick={ onClick }
-          first
         />
       </div>
       <div style={ styles.swatch }>
@@ -86,18 +82,14 @@ export const SliderSwatches = ({ onClick, hsl }) => {
         <SliderSwatch
           hsl={ hsl }
           offset=".20"
-          active={
-            Math.round(hsl.l * 100) / 100 === 0.2 &&
-            Math.round(hsl.s * 100) / 100 === 0.5
-          }
+          active={ hsl.l === 0 && hsl.s === 0 && hsl.l === 0 }
           onClick={ onClick }
-          last
         />
       </div>
       <div style={ styles.swatch }>
         <SliderSwatch
           hsl={ hsl }
-          offset="0.0"
+          offset=".00"
           active={
             Math.round(hsl.l * 100) / 100 === 0.0 &&
             Math.round(hsl.s * 100) / 100 === 0.5
