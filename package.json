@@ -1,6 +1,6 @@
 {
   "name": "react-color-townliquor-fork",
-  "version": "2.16.7",
+  "version": "2.16.8",
   "description": "A Collection of Color Pickers from Sketch, Photoshop, Chrome & more. Forked by RenRen",
   "main": "lib/index.js",
   "repository": {
