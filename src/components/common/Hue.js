@@ -50,7 +50,7 @@ export class Hue extends (PureComponent || Component) {
             position: 'relative',
             height: '100%',
             borderRadius: this.props.radius,
-            touchAction: 'pan-x',
+            // touchAction: 'pan-x',
           },
           pointer: {
             position: 'absolute',
