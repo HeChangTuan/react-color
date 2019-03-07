@@ -14,6 +14,7 @@ export class Hue extends (PureComponent || Component) {
       this.props.hsl,
       this.container
     )
+    console.log({ change })
     change &&
       typeof this.props.onChange === 'function' &&
       this.props.onChange(change, e)
